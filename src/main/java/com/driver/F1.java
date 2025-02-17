@@ -7,6 +7,7 @@ public class F1 extends Car {
         super(name, 4, 2, 6, isManual, "F1", 1);
     }
 
+
     public void accelerate(int rate){
         //int newSpeed = 0; //set the value of new speed by using currentSpeed and rate
         /**
