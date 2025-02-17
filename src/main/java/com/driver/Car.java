@@ -21,12 +21,9 @@ public class Car extends Vehicle {
         this.seats = seats;
         this.currentGear = 1; // Default gear
     }
-
     public void changeGear(int newGear){
-
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
-
     public void changeSpeed(int newSpeed, int newDirection){
 
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");

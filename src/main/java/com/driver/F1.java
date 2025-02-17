@@ -39,10 +39,10 @@ public class F1 extends Car {
         } else {
             changeGear(6);
         }
-
         // Update speed if positive
         if (newSpeed > 0) {
             changeSpeed(newSpeed, getCurrentDirection());
+
         }
     }
 
