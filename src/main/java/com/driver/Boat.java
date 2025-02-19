@@ -14,7 +14,7 @@ interface  waterVehicle{
 
      @Override
      public int getVehicleCapacity() {
-         return 0;
+         return capacity;
      }
      @Override
      public String getVehicleName() {
