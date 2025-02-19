@@ -3,7 +3,9 @@ public class Car extends Vehicle {
     private int wheels;
     private String type;
     private int doors;
+
     private int gears;
+
     private boolean isManual;
     private int currentGear;
     private int seats;
