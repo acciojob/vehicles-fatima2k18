@@ -24,9 +24,6 @@ public class Car extends Vehicle {
 
     public void changeGear(int newGear){
 
-        System.out.println("changeGear method called - The gear is changed to: " + currentGear);
-
-
         if (newGear > 0 && newGear <= gears) {
             this.currentGear = newGear;
             System.out.println("changeGear method called - The gear is changed to: " + currentGear);
