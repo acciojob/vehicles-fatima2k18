@@ -13,6 +13,9 @@ public class Vehicle {
 
         return currentDirection;
     }
+    public String getName(){
+        return name;
+    }
     public Vehicle(String name) {
 
         this.name = name;
