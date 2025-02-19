@@ -11,6 +11,11 @@ public class Vehicle {
         this.currentSpeed = 0;
         this.currentDirection = 0;
     }
+    public void move(int speed, int direction) {
+        this.currentSpeed = speed;
+        this.currentDirection = direction;
+        System.out.println(name + " is moving at speed " + speed + " in direction " + direction + " degrees.");
+    }
 
     public int getCurrentSpeed() {
         return currentSpeed;

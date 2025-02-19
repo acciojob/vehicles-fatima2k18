@@ -27,6 +27,9 @@ public class Car extends Vehicle {
         this.currentGear = newGear;
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
         }
+    public void move(int speed, int direction) {
+        changeSpeed(speed, direction); // Call Vehicle's method
+    }
 
     public void changeSpeed(int newSpeed, int newDirection){
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
@@ -54,6 +57,7 @@ public class Car extends Vehicle {
     public boolean isManual() {
         return isManual;
     }
+
 
     public String getType() {
         return type;
