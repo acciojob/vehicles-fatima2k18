@@ -21,34 +21,28 @@ public class F1 extends Car {
 
         int newSpeed = getCurrentSpeed() + rate; // Calculate new speed
 
-        // Determine gear based on speed
-        if (newSpeed < 0) {
-            newSpeed = 0;  // Prevent negative speeds
+        if(newSpeed == 0) {
+            //Stop the car, set gear as 1
+            stop();
+            changeGear(1);
         }
-
-        // Determine the appropriate gear based on speed
-        int newGear;
-        if (newSpeed == 0) {
-            newGear = 1;
-        } else if (newSpeed <= 50) {
-            newGear = 1;
+        //for all other cases, change the gear accordingly
+        else if (newSpeed <= 50){
+            changeGear(1);
         } else if (newSpeed <= 100) {
-            newGear = 2;
+            changeGear(2);
         } else if (newSpeed <= 150) {
-            newGear = 3;
+            changeGear(3);
         } else if (newSpeed <= 200) {
-            newGear = 4;
+            changeGear(4);
         } else if (newSpeed <= 250) {
-            newGear = 5;
-        } else {
-            newGear = 6;
+            changeGear(5);
         }
-
-        changeGear(newGear); // Update the gear
-        changeSpeed(newSpeed,getCurrentSpeed()); // Update speed
-
-        if (newSpeed == 0) {
-            stop(); // Stop the vehicle if speed is zero
+        else {
+            changeGear(6);
+        }
+        if(newSpeed > 0) {
+            changeSpeed(newSpeed, getCurrentDirection());
         }
 
     }
